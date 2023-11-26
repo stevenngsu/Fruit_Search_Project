@@ -1,0 +1,52 @@
+:focus {
+  background-color: rgb(50, 182, 0);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+input {
+  display: block;
+  padding: 5px;
+  border-radius: 0.5rem;
+}
+
+.search-container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  user-select: none;
+}
+
+.suggestions {
+   width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background-color: rgb(148, 240, 95);
+  padding: 5px;
+  user-select: none;
+}
+ul li:hover {
+  background-color: white;
+}
